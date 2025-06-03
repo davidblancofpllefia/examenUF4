@@ -1,27 +1,22 @@
 // app/layout.tsx
+import './globals.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import { ReactNode } from 'react'
+import Header from './componentes/Header'
 
 export const metadata = {
   title: 'Examen UF4',
-  description: 'Examen de Next.js amb TMDB',
+  description: 'Examen de Next.js con TMDB',
 }
 
-type RootLayoutProps = {
-  children: ReactNode
-}
-
-export default function RootLayout({ children }: RootLayoutProps) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="es">
       <body>
-        <header>
-          <h1>David Blanco</h1>
-        </header>
-        <main>
-          {children}
-        </main>
+        <Header />
+        <main>{children}</main>
         <footer>
-          <p>Pie de pagina</p>
+          <p>© 2025 - Examen UF4</p>
         </footer>
       </body>
     </html>
