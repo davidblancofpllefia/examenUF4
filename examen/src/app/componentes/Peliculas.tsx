@@ -1,6 +1,6 @@
 // app/components/Peliculas.tsx
 
-type Movie = {
+type Pelicula = {
   id: number
   title: string
   poster_path: string
@@ -12,7 +12,7 @@ export default async function Peliculas() {
     'https://api.themoviedb.org/3/movie/popular?api_key=ac6782401a3d884223c919a7b6387ba9&language=es-ES&page=1'
   )
   const data = await res.json()
-  const peliculas: Movie[] = data.results
+  const peliculas: Pelicula[] = data.results
 
   return (
     <div className="container mt-4">
