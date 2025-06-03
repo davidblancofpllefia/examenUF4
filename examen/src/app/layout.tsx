@@ -15,7 +15,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
     <html lang="en">
       <body>
         <header>
-          <h1>El teu nom aquí</h1>
+          <h1>David Blanco</h1>
         </header>
         <main>
           {children}
