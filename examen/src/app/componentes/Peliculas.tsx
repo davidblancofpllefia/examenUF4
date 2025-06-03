@@ -1,4 +1,4 @@
-// app/components/Peliculas.tsx
+import Link from 'next/link'
 
 type Pelicula = {
   id: number
@@ -16,7 +16,7 @@ export default async function Peliculas() {
 
   return (
     <div className="container mt-4">
-      <h2>Películas Populares</h2>
+      <h1>Películas Populares</h1>
       <div className="row">
         {peliculas.map((pelicula) => (
           <div key={pelicula.id} className="col-md-3 mb-4">
@@ -24,11 +24,12 @@ export default async function Peliculas() {
               <img
                 src={`https://image.tmdb.org/t/p/w500${pelicula.poster_path}`}
                 className="card-img-top"
-                alt={pelicula.title}
             />
 
               <div className="card-body">
-                <h5 className="card-title">{pelicula.title}</h5>
+               <h5 className="card-title">
+                    <Link href={`/peliculas/${pelicula.id}`}>{pelicula.title}</Link>
+               </h5>
                 <p className="card-text">⭐{pelicula.vote_average}</p>
               </div>
             </div>
