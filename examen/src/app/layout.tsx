@@ -3,6 +3,7 @@ import './globals.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { ReactNode } from 'react'
 import Header from './componentes/Header'
+import Footer from './componentes/Footer'
 
 export const metadata = {
   title: 'Examen UF4',
@@ -15,9 +16,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body>
         <Header />
         <main>{children}</main>
-        <footer>
-          <p>© 2025 - Examen UF4</p>
-        </footer>
+        <footer />
       </body>
     </html>
   )

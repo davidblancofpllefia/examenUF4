@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+
+NEXT_PUBLIC_TMDB_API_KEY=eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhYzY3ODI0MDFhM2Q4ODQyMjNjOTE5YTdiNjM4N2JhOSIsIm5iZiI6MTc0ODk1NzM4My4zODksInN1YiI6IjY4M2VmOGM3YzMwMmU3MjAyZGZjYWUxMiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.44lxWJLFfs9D7_mW_qIQGP7wRT_ypC_lYWG4BxKebxU
